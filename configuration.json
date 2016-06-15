@@ -1,0 +1,5 @@
+{
+  "mongoIp":"localhost",
+  "databaseName":"bridge",
+  "dropDatabase": false
+}
