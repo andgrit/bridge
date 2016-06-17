@@ -26,7 +26,7 @@ func TestRealServer(t *testing.T) {
 	defer bridgeServer.Close()
 
 	var versionInfo controllers.VersionInfo
-	err := getType(bridgeServer.URL, &versionInfo)
+	err := getType(bridgeServer.URL + "/version", &versionInfo)
 	assert.NoError(t, err)
 	assert.Equal(t, "bridge", versionInfo.Application)
 
